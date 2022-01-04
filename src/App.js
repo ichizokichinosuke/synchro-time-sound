@@ -14,7 +14,7 @@ function MyTime () {
   const {seconds, minutes, hours, ampm} = useTime({format: "12-hour"});
   const [count, setCount] = useState(0);
   const [nowStyle, setStyle] = useState("#282c34");
-  const [soundPlay, {soundStop, soundPause}] = useSound(Sound);
+  const [soundPlay] = useSound(Sound);
 
   const intervalRef = useRef(null);
   const start = useCallback(() => {
